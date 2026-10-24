@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Rent — Премиальный свадебный прокат</title>
+    <script src="https://jsdelivr.net"></script>
+    <style>
+        @import url('https://googleapis.com');
+        .font-luxury { font-family: 'Playfair Display', serif; }
+        .font-main { font-family: 'Montserrat', sans-serif; }
+    </style>
+</head>
+<body class="bg-stone-50 font-main text-stone-800 antialiased">
+
+    <!-- Шапка сайта -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex flex-col">
+                <span class="font-luxury text-2xl font-bold tracking-widest text-amber-700">ROYAL RENT</span>
+                <span class="text-xs uppercase tracking-widest text-stone-400 -mt-1">Wedding & Luxury Service</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold tracking-wider uppercase">
+                <a href="#about" class="text-stone-600 hover:text-amber-700 transition">О нас</a>
+                <a href="#catalog" class="text-stone-600 hover:text-amber-700 transition">Каталог</a>
+                <a href="#cars" class="text-stone-600 hover:text-amber-700 transition">Автопарк</a>
+                <a href="#booking" class="text-stone-600 hover:text-amber-700 transition">Контакты</a>
+            </nav>
+            <a href="#booking" class="border border-amber-700 text-amber-700 hover:bg-amber-700 hover:text-white px-5 py-2.5 rounded-full text-xs font-semibold tracking-widest uppercase transition duration-300">
+                Забронировать
+            </a>
+        </div>
+    </header>
+
+    <!-- Главный баннер -->
+    <section class="relative bg-stone-900 text-white py-32 px-4 bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('https://unsplash.com');">
+        <div class="max-w-4xl mx-auto text-center space-y-6">
+            <h1 class="font-luxury text-4xl sm:text-6xl font-bold tracking-wide leading-tight">Идеальная свадьба начинается здесь</h1>
+            <p class="text-lg sm:text-xl font-light tracking-wide text-stone-200 max-w-2xl mx-auto">Эксклюзивный декор, премиальные автомобили и свадебные аксессуары для вашего особенного дня.</p>
+            <div class="pt-4">
+                <a href="#catalog" class="bg-amber-700 hover:bg-amber-800 text-white px-8 py-4 rounded-full font-semibold tracking-wider text-sm uppercase shadow-xl transition duration-300">
+                    Открыть каталог
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section id="about" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h2 class="font-luxury text-3xl sm:text-4xl font-bold text-stone-900">Королевский стандарт вашего торжества</h2>
+                <div class="w-16 h-1 bg-amber-700"></div>
+                <p class="text-stone-600 leading-relaxed">Мы в <strong class="text-amber-700">Royal Rent</strong> знаем, что в свадебный день важна каждая деталь. Наша миссия — предоставить вам безупречный сервис, роскошные элементы оформления и лучшие премиум-автомобили, чтобы воплотить в жизнь свадьбу вашей мечты.</p>
+                <ul class="space-y-3 font-medium text-stone-700">
+                    <li class="flex items-center"><span class="text-amber-700 mr-2">✓</span> Только идеальное состояние всех вещей и авто</li>
+                    <li class="flex items-center"><span class="text-amber-700 mr-2">✓</span> Официальный договор и гарантия подачи в срок</li>
+                    <li class="flex items-center"><span class="text-amber-700 mr-2">✓</span> Индивидуальный подход к каждой паре</li>
+                </ul>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <img src="https://unsplash.com" alt="Wedding" class="rounded-2xl shadow-md mt-6">
+                <img src="https://unsplash.com" alt="Luxury Car" class="rounded-2xl shadow-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- Свадебный каталог -->
+    <section id="catalog" class="py-20 bg-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            <div class="text-center space-y-3">
+                <h2 class="font-luxury text-3xl sm:text-4xl font-bold text-stone-900">Свадебный прокат</h2>
+                <p class="text-stone-500 max-w-md mx-auto">Всё необходимое для создания неповторимой атмосферы праздника.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Категория 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
+                    <img src="https://unsplash.com" class="h-64 w-full object-cover">
+                    <div class="p-6 space-y-2">
+                        <h3 class="font-luxury text-xl font-bold">Свадебные арки и фотозоны</h3>
+                        <p class="text-stone-600 text-sm">Великолепные арки, украшенные премиальными цветами и тканями.</p>
+                    </div>
+                </div>
+                <!-- Категория 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
+                    <img src="https://unsplash.com" class="h-64 w-full object-cover">
+                    <div class="p-6 space-y-2">
+                        <h3 class="font-luxury text-xl font-bold">Декор столов и залов</h3>
+                        <p class="text-stone-600 text-sm">Канделябры, хрусталь, текстиль класса люкс и дизайнерские стойки.</p>
+                    </div>
+                </div>
+                <!-- Категория 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
+                    <img src="https://unsplash.com" class="h-64 w-full object-cover">
+                    <div class="p-6 space-y-2">
+                        <h3 class="font-luxury text-xl font-bold">Эффекты и Оборудование</h3>
+                        <p class="text-stone-600 text-sm">Генераторы тяжелого дыма, спецэффекты и световые решения.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Автопарк -->
+    <section id="cars" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        <div class="text-center space-y-3">
+            <h2 class="font-luxury text-3xl sm:text-4xl font-bold text-stone-900">Премиальный автопарк</h2>
+            <p class="text-stone-500 max-w-md mx-auto">Роскошные кортежи для незабываемой поездки жениха и невесты.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Авто 1 -->
+            <div class="bg-white border border-stone-200 rounded-3xl overflow-hidden flex flex-col sm:flex-row">
+                <img src="https://unsplash.com" class="sm:w-1/2 h-64 object-cover">
+                <div class="p-6 flex flex-col justify-between space-y-4">
+                    <div>
+                        <h3 class="font-luxury text-xl font-bold text-stone-900">Премиум седаны</h3>
+                        <p class="text-stone-600 text-sm mt-2">Роскошный просторный салон, идеальный белый цвет, вежливый водитель.</p>
+                    </div>
+                    <a href="#booking" class="text-amber-700 font-semibold text-sm hover:underline">Узнать свободные даты →</a>
+                </div>
+            </div>
+            <!-- Авто 2 -->
+            <div class="bg-white border border-stone-200 rounded-3xl overflow-hidden flex flex-col sm:flex-row">
+                <img src="https://unsplash.com" class="sm:w-1/2 h-64 object-cover">
+                <div class="p-6 flex flex-col justify-between space-y-4">
+                    <div>
+                        <h3 class="font-luxury text-xl font-bold text-stone-900">Стильные кабриолеты</h3>
+                        <p class="text-stone-600 text-sm mt-2">Эффектное появление на церемонии и потрясающие кадры для свадебного видео.</p>
+                    </div>
+                    <a href="#booking" class="text-amber-700 font-semibold text-sm hover:underline">Узнать свободные даты →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Бронирование и Контакты -->
+    <section id="booking" class="py-20 bg-stone-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 space-y-12">
+            <div class="text-center space-y-3">
+                <h2 class="font-luxury text-3xl sm:text-4xl font-bold">Оставить заявку</h2>
+                <p class="text-stone-400">Укажите дату вашей свадьбы, и мы свяжемся с вами в течение 15 минут.</p>
+            </div>
+            <form class="bg-white text-stone-800 p-8 sm:p-10 rounded-3xl shadow-2xl space-y-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
