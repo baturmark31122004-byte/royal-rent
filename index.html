@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Royal Rent — Премиальный свадебный прокат</title>
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; margin-bottom: 0; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f5f5f4; color: #1c1917; line-height: 1.6; }
         header { position: sticky; top: 0; z-index: 50; background-color: rgba(255, 255, 255, 0.95); border-b: 1px solid #e7e5e4; backdrop-filter: blur(8px); }
-        .header-container { max-w: 1200px; mx-auto: auto; margin: 0 auto; px: 20px; padding: 0 20px; height: 80px; display: flex; align-items: center; justify-content: space-between; }
+        .header-container { max-w: 1200px; margin: 0 auto; padding: 0 20px; height: 80px; display: flex; align-items: center; justify-content: space-between; }
         .logo-box { display: flex; flex-direction: column; }
-        .logo-title { font-size: 24px; font-weight: 700; tracking-content: 0.1em; letter-spacing: 2px; color: #b45309; font-family: Georgia, serif; }
-        .logo-subtitle { font-size: 10px; uppercase: uppercase; text-transform: uppercase; letter-spacing: 2px; color: #a8a29e; margin-top: -2px; }
+        .logo-title { font-size: 24px; font-weight: 700; letter-spacing: 2px; color: #b45309; font-family: Georgia, serif; }
+        .logo-subtitle { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: #a8a29e; margin-top: -2px; }
         .nav-links { display: flex; gap: 30px; }
         .nav-links a { text-decoration: none; color: #57534e; font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; }
         .nav-links a:hover { color: #b45309; }
-        .btn-top { border: 1px solid #b45309; color: #b45309; background: none; padding: 10px 22px; border-radius: 50px; text-transform: uppercase; font-size: 12px; font-weight: 600; tracking-content: 1px; cursor: pointer; text-decoration: none; transition: 0.3s; }
+        .btn-top { border: 1px solid #b45309; color: #b45309; background: none; padding: 10px 22px; border-radius: 50px; text-transform: uppercase; font-size: 12px; font-weight: 600; letter-spacing: 1px; cursor: pointer; text-decoration: none; transition: 0.3s; }
         .btn-top:hover { background: #b45309; color: white; }
         
-        .hero { background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.85)), url('https://unsplash.com') no-repeat center center/cover; padding: 120px 20px; text-align: center; color: white; }
+        .hero { background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.85)), url('image.png') no-repeat center center/cover; padding: 120px 20px; text-align: center; color: white; }
         .hero h1 { font-family: Georgia, serif; font-size: 48px; font-weight: 700; margin-bottom: 20px; letter-spacing: 1px; }
         .hero p { font-size: 18px; color: #e7e5e4; max-w: 600px; margin: 0 auto 30px auto; font-weight: 300; }
         .btn-main { background: #b45309; color: white; padding: 15px 35px; border-radius: 50px; text-transform: uppercase; font-size: 14px; font-weight: 600; text-decoration: none; display: inline-block; transition: 0.3s; box-shadow: 0 4px 15px rgba(180, 83, 9, 0.4); }
@@ -27,7 +27,7 @@
         .section { padding: 80px 20px; max-w: 1200px; margin: 0 auto; }
         .section-title { text-align: center; font-family: Georgia, serif; font-size: 36px; margin-bottom: 15px; color: #1c1917; }
         .section-subtitle { text-align: center; color: #78716c; margin-bottom: 50px; font-size: 16px; }
-        .line { w: 60px; height: 3px; background: #b45309; margin: 0 auto 25px auto; width: 60px; }
+        .line { height: 3px; background: #b45309; margin: 0 auto 25px auto; width: 60px; }
 
         .about-grid { display: flex; gap: 50px; align-items: center; }
         .about-text { flex: 1; }
@@ -53,7 +53,7 @@
         .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
         @media(max-width: 600px) { .form-grid { grid-template-columns: 1fr; } .about-grid { flex-direction: column; } }
         .form-group { display: flex; flex-direction: column; margin-bottom: 20px; }
-        .form-group label { font-size: 11px; text-transform: uppercase; font-weight: 700; tracking-content: 1px; color: #78716c; margin-bottom: 8px; letter-spacing: 1px; }
+        .form-group label { font-size: 11px; text-transform: uppercase; font-weight: 700; color: #78716c; margin-bottom: 8px; letter-spacing: 1px; }
         .form-group input, .form-group textarea { background: #f5f5f4; border: none; padding: 15px; border-radius: 10px; font-size: 15px; outline: none; font-family: inherit; }
         .form-group input:focus, .form-group textarea:focus { box-shadow: 0 0 0 2px #b45309; }
         .btn-submit { background: #b45309; color: white; width: 100%; padding: 16px; border: none; border-radius: 10px; text-transform: uppercase; font-weight: 700; font-size: 14px; letter-spacing: 1px; cursor: pointer; transition: 0.3s; }
@@ -70,9 +70,6 @@
             <div class="logo-box">
                 <span class="logo-title">ROYAL RENT</span>
                 <span class="logo-subtitle">Wedding & Luxury Service</span>
-            </div>
-            <div class="nav-links">
-                <!-- Меню навигации -->
             </div>
             <a href="#booking" class="btn-top">Забронировать</a>
         </div>
@@ -99,8 +96,8 @@
                 </ul>
             </div>
             <div class="about-images">
-                <img src="https://unsplash.com" alt="Wedding">
-                <img src="https://unsplash.com" alt="Luxury Car">
+                <img src="image.png" alt="Wedding">
+                <img src="image.png" alt="Luxury Car">
             </div>
         </div>
     </section>
@@ -114,21 +111,21 @@
             
             <div class="grid-3">
                 <div class="card">
-                    <img src="https://unsplash.com">
+                    <img src="image.png">
                     <div class="card-content">
                         <h3>Свадебные арки и фотозоны</h3>
                         <p>Великолепные арки, украшенные премиальными цветами и тканями.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://unsplash.com">
+                    <img src="image.png">
                     <div class="card-content">
                         <h3>Декор столов и залов</h3>
                         <p>Канделябры, хрусталь, текстиль класса люкс и дизайнерские стойки.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://unsplash.com">
+                    <img src="image.png">
                     <div class="card-content">
                         <h3>Эффекты и Оборудование</h3>
                         <p>Генераторы тяжелого дыма, спецэффекты и световые решения.</p>
@@ -149,3 +146,18 @@
                 <div class="form-grid">
                     <div class="form-group">
                         <label>Ваше Имя</label>
+                        <input type="text" placeholder="Иван">
+                    </div>
+                    <div class="form-group">
+                        <label>Телефон</label>
+                        <input type="tel" placeholder="+375 (XX) XXX-XX-XX">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Дата торжества</label>
+                    <input type="date">
+                </div>
+                <div class="form-group">
+                    <label>Что вас интересует?</label>
+                    <textarea rows="3" placeholder="Прокат автомобиля, декор, тяжелый дым..."></textarea>
+                </div>
